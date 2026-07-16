@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class DictionaryHashCracker implements HashCracker {
 
     private static final String DICTIONARY = "dictionary.txt";

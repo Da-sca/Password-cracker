@@ -16,7 +16,7 @@ public class PasswordCracker {
 
         // Validation des arguments requis
         if (method == null || hash == null) {
-            System.out.println("Usage: passwordCracker -m [BRUTE|DICO] -h [hash_md5]");
+            System.out.println(" Usage: PasswordCracker -m [BRUTE|DICO] -h [hash_md5]");
             return;
         }
 
@@ -31,11 +31,11 @@ public class PasswordCracker {
 
             // Affichage du résultat final
             if (result != null) {
-                System.out.println("Password found: " + result);
+                System.out.println(" Mot de passe trouvé : " + result);
             } else {
-                System.out.println("Password not found");
+                System.out.println(" Mot de passe non trouvé.");
             }
-            System.out.println("Execution time: " + (endTime - startTime) + " ms");
+            System.out.println(" Temps d'exécution du programme : " + (endTime - startTime) + " ms");
 
         } catch (IllegalArgumentException e) {
             System.err.println("Erreur : " + e.getMessage());

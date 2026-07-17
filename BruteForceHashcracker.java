@@ -15,8 +15,8 @@ public class BruteForceHashCracker implements HashCracker {
         }
 
         long endTime = System.currentTimeMillis();
-        System.out.println("Attempts: " + attempts);
-        System.out.println("Time elapsed: " + (endTime - startTime) + " ms");
+        System.out.println(" Nombre de tentatives : " + attempts);
+        System.out.println(" Temps de cassage : " + (endTime - startTime) + " ms");
 
         return result;
     }

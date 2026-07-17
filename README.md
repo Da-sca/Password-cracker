@@ -1,4 +1,5 @@
 # Password-cracker
+
 Mini-projet 1 — DIC1, Design Patterns
 
 ## 1. Introduction
@@ -118,13 +119,16 @@ Le projet compile sans erreur (`javac *.java`) et a été testé avec succès su
 ### Cassage par dictionnaire — cas trouvé
 
 ![Cassage par dictionnaire — cas trouvé](assets/1.png)
+
 ### Cassage par dictionnaire — cas non trouvé
 
 ![Cassage par dictionnaire — cas non trouvé](assets/2.png)
 (9 tentatives = les 9 mots du fichier `dictionary.txt`, le hash recherché — celui de `cat` — n'y figurant pas.)
 
 ### Cassage par force brute — cas trouvé
+
 ![Cassage par force brute — cas trouvé](assets/3.png)
+
 ### Cassage par force brute — cas non trouvé (hors limite de longueur)
 
 ![Cassage par force brute — cas non trouvé](assets/4.png)
@@ -166,6 +170,7 @@ Enfin, la difficulté rencontrée sur la lecture du dictionnaire (espaces et tab
 Au global, les objectifs pédagogiques du mini-projet — conception modulaire, polymorphisme, mise en œuvre du Simple Factory, et compréhension de ses limites — ont été atteints.
 
 ---
+
 ## Prérequis et exécution
 
 - **JDK** : Java 11 ou supérieur (testé avec OpenJDK 21)

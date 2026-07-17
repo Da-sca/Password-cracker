@@ -12,7 +12,7 @@ public class MD5Utils {
             byte[] digestBytes = md.digest(input.getBytes());
             return bytesToHex(digestBytes);
         } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException("MD5 algorithm not available", e);
+            throw new RuntimeException("l'algorithme MD5 n'est pas disponible", e);
         }
     }
 

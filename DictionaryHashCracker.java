@@ -1,3 +1,7 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class DictionaryHashCracker implements HashCracker {
 
     private static final String DICTIONARY = "dictionary.txt";
@@ -21,9 +25,11 @@ public class DictionaryHashCracker implements HashCracker {
                     break;
                 }
             }
+            scanner.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Impossible de lire le fichier de dictionnaire: " + DICTIONARY, e);
         }
+       
 
         long endTime = System.currentTimeMillis();
         System.out.println("Tentatives: " + attempts);
